@@ -1,0 +1,31 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'myapp/styles/style.css' %}">
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<header>
+  <h1><i class="fa-solid fa-ghost "style="color:#bfeff1;"></i>Все услуги</h1>
+     </header>
+<div class="wrap">
+
+
+      <h1 class="section-name">Все услуги</h1>
+      <ol>
+        <li>Одна фотосессия</li>
+        <p>Стоимость: 2500руб.</p>
+        <li>Фотограф на мероприяте (весь день)</li>
+        <p>Стоимость: 5000руб.</p>
+        <li>Макияж</li>
+        <p>Стоимость: 2500руб.</p>
+        <li>Работа стилиста</li>
+        <p>Стоимость: 2500руб.</p>
+        <li>Подбор локации</li>
+        <p>Стоимость: 1500руб.</p>
+        <li>Снять фотостудию</li>
+        <p>Стоимость: 5500руб.</p> 
+    </ol>
+
+{% endblock %}
